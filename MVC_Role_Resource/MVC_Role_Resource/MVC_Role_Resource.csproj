@@ -180,6 +180,10 @@
     <Compile Include="Migrations\201901211204424_SecUser table modified again.Designer.cs">
       <DependentUpon>201901211204424_SecUser table modified again.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201901220502370_SecUserRole table modified.cs" />
+    <Compile Include="Migrations\201901220502370_SecUserRole table modified.Designer.cs">
+      <DependentUpon>201901220502370_SecUserRole table modified.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\RoleResourceDBContext.cs" />
     <Compile Include="Models\RoleResource\SecRolePermission.cs" />
@@ -278,6 +282,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201901211204424_SecUser table modified again.resx">
       <DependentUpon>201901211204424_SecUser table modified again.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901220502370_SecUserRole table modified.resx">
+      <DependentUpon>201901220502370_SecUserRole table modified.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
