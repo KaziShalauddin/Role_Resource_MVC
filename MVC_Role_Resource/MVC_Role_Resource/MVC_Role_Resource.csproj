@@ -154,6 +154,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ResourcesController.cs" />
     <Compile Include="Controllers\RolesController.cs" />
     <Compile Include="Controllers\StudentsController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
@@ -183,6 +184,10 @@
     <Compile Include="Migrations\201901220502370_SecUserRole table modified.cs" />
     <Compile Include="Migrations\201901220502370_SecUserRole table modified.Designer.cs">
       <DependentUpon>201901220502370_SecUserRole table modified.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901230132282_SecResource and SecResourcePermission tables modified.cs" />
+    <Compile Include="Migrations\201901230132282_SecResource and SecResourcePermission tables modified.Designer.cs">
+      <DependentUpon>201901230132282_SecResource and SecResourcePermission tables modified.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\RoleResourceDBContext.cs" />
@@ -250,6 +255,11 @@
     <Content Include="Views\Users\Details.cshtml" />
     <Content Include="Views\Users\Edit.cshtml" />
     <Content Include="Views\Users\Index.cshtml" />
+    <Content Include="Views\Resources\Create.cshtml" />
+    <Content Include="Views\Resources\Delete.cshtml" />
+    <Content Include="Views\Resources\Details.cshtml" />
+    <Content Include="Views\Resources\Edit.cshtml" />
+    <Content Include="Views\Resources\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -285,6 +295,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201901220502370_SecUserRole table modified.resx">
       <DependentUpon>201901220502370_SecUserRole table modified.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901230132282_SecResource and SecResourcePermission tables modified.resx">
+      <DependentUpon>201901230132282_SecResource and SecResourcePermission tables modified.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
