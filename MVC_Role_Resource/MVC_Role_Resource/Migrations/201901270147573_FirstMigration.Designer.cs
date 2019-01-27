@@ -7,13 +7,13 @@ namespace MVC_Role_Resource.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class SecUserRoletablemodified : IMigrationMetadata
+    public sealed partial class FirstMigration : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(SecUserRoletablemodified));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(FirstMigration));
         
         string IMigrationMetadata.Id
         {
-            get { return "201901220502370_SecUserRole table modified"; }
+            get { return "201901270147573_FirstMigration"; }
         }
         
         string IMigrationMetadata.Source

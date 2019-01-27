@@ -51,8 +51,8 @@ namespace MVC_Role_Resource.Controllers
         {
             if (ModelState.IsValid)
             {
-                secResource.CreatedBy = 1;
-                secResource.CreationDateTime = DateTime.Now;
+                //secResource.CreatedBy = 1;
+                //secResource.CreationDateTime = DateTime.Now;
                 db.SecResources.Add(secResource);
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -88,8 +88,8 @@ namespace MVC_Role_Resource.Controllers
                 var resource = db.SecResources.FirstOrDefault(r => r.Id == secResource.Id);
                 if (resource != null)
                 {
-                    resource.ModifiedBy = 2;
-                    resource.ModificationDateTime = DateTime.Now;
+                    //resource.ModifiedBy = 2;
+                    //resource.ModificationDateTime = DateTime.Now;
                     resource.FileName = secResource.FileName;
                     resource.MenuName = secResource.MenuName;
                     resource.DisplayName = secResource.DisplayName;
@@ -142,6 +142,37 @@ namespace MVC_Role_Resource.Controllers
                 db.Dispose();
             }
             base.Dispose(disposing);
+        }
+
+        public ActionResult AddResourcePermission(int? resourceId,int? roleId)
+        {
+            if (resourceId == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            if (roleId == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            SecResource secResource = db.SecResources.Find(resourceId);
+            if (secResource == null)
+            {
+                return HttpNotFound();
+            }
+            var resource=new SecResourcePermission();
+            //resource.CreatedBy = 1;
+            //resource.CreationDateTime = DateTime.Now;
+            resource.FileName = secResource.FileName;
+            resource.MenuName = secResource.MenuName;
+            resource.DisplayName = secResource.DisplayName;
+            resource.ModuleId = secResource.ModuleId;
+            resource.Order = secResource.Order;
+            resource.Level = secResource.Level;
+            resource.ActionUrl = secResource.ActionUrl;
+            resource.Status = secResource.Status;
+            resource.SecRoleId =(int) roleId;
+            resource.SecResourceId =(int)resourceId;
+            return View(secResource);
         }
     }
 }

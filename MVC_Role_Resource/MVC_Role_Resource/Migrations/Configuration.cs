@@ -12,10 +12,9 @@ namespace MVC_Role_Resource.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "RoleResourceDBContext";
         }
 
-        protected override void Seed(MVC_Role_Resource.Models.RoleResourceDBContext context)
+        protected override void Seed(RoleResourceDBContext context)
         {
             //  This method will be called after migrating to the latest version.
 

@@ -18,7 +18,7 @@ namespace MVC_Role_Resource.Models.RoleResource
         public int? ModifiedBy { get; set; }
         public DateTime? ModificationDateTime { get; set; }
 
-        public int RoleId { get; set; }
+        public int? RoleId { get; set; }
         public SecRole Role { get; set; }
 
     }

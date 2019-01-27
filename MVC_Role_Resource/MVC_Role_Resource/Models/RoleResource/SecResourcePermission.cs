@@ -21,12 +21,8 @@ namespace MVC_Role_Resource.Models.RoleResource
         public int Order { get; set; }
         public int Level { get; set; }
         public string ActionUrl { get; set; }
-        public string Status { get; set; }
+        public bool Status { get; set; }
 
 
-        public int CreatedBy { get; set; }
-        public DateTime CreationDateTime { get; set; }
-        public int? ModifiedBy { get; set; }
-        public DateTime? ModificationDateTime { get; set; }
     }
 }

@@ -161,33 +161,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201901200651146_InitialCreate.cs" />
-    <Compile Include="Migrations\201901200651146_InitialCreate.Designer.cs">
-      <DependentUpon>201901200651146_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201901210541107_Role Resource related tables added.cs" />
-    <Compile Include="Migrations\201901210541107_Role Resource related tables added.Designer.cs">
-      <DependentUpon>201901210541107_Role Resource related tables added.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201901210840532_SecRole table modified.cs" />
-    <Compile Include="Migrations\201901210840532_SecRole table modified.Designer.cs">
-      <DependentUpon>201901210840532_SecRole table modified.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201901211137431_SecUser table modified.cs" />
-    <Compile Include="Migrations\201901211137431_SecUser table modified.Designer.cs">
-      <DependentUpon>201901211137431_SecUser table modified.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201901211204424_SecUser table modified again.cs" />
-    <Compile Include="Migrations\201901211204424_SecUser table modified again.Designer.cs">
-      <DependentUpon>201901211204424_SecUser table modified again.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201901220502370_SecUserRole table modified.cs" />
-    <Compile Include="Migrations\201901220502370_SecUserRole table modified.Designer.cs">
-      <DependentUpon>201901220502370_SecUserRole table modified.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201901230132282_SecResource and SecResourcePermission tables modified.cs" />
-    <Compile Include="Migrations\201901230132282_SecResource and SecResourcePermission tables modified.Designer.cs">
-      <DependentUpon>201901230132282_SecResource and SecResourcePermission tables modified.cs</DependentUpon>
+    <Compile Include="Migrations\201901270147573_FirstMigration.cs" />
+    <Compile Include="Migrations\201901270147573_FirstMigration.Designer.cs">
+      <DependentUpon>201901270147573_FirstMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\RoleResourceDBContext.cs" />
@@ -260,6 +236,8 @@
     <Content Include="Views\Resources\Details.cshtml" />
     <Content Include="Views\Resources\Edit.cshtml" />
     <Content Include="Views\Resources\Index.cshtml" />
+    <Content Include="Views\Users\CreateWithoutRole.cshtml" />
+    <Content Include="Views\Users\AssignRole.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -278,26 +256,8 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201901200651146_InitialCreate.resx">
-      <DependentUpon>201901200651146_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201901210541107_Role Resource related tables added.resx">
-      <DependentUpon>201901210541107_Role Resource related tables added.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201901210840532_SecRole table modified.resx">
-      <DependentUpon>201901210840532_SecRole table modified.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201901211137431_SecUser table modified.resx">
-      <DependentUpon>201901211137431_SecUser table modified.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201901211204424_SecUser table modified again.resx">
-      <DependentUpon>201901211204424_SecUser table modified again.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201901220502370_SecUserRole table modified.resx">
-      <DependentUpon>201901220502370_SecUserRole table modified.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201901230132282_SecResource and SecResourcePermission tables modified.resx">
-      <DependentUpon>201901230132282_SecResource and SecResourcePermission tables modified.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201901270147573_FirstMigration.resx">
+      <DependentUpon>201901270147573_FirstMigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
